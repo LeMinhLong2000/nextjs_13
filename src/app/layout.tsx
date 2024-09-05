@@ -28,7 +28,6 @@ export default function RootLayout({
           <AppTable></AppTable>
         </div>
 
-
         <AppFooter></AppFooter>
       </body>
     </html>
