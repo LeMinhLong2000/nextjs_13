@@ -2,7 +2,6 @@
 import { Inter } from 'next/font/google'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AppHeader from '@/components/app.header';
-import AppTable from '@/components/app.table';
 import AppFooter from '@/components/app.footer';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -24,8 +23,6 @@ export default function RootLayout({
         
         <div className='container'>
           {children}
-
-          <AppTable></AppTable>
         </div>
 
         <AppFooter></AppFooter>
