@@ -28,7 +28,7 @@ export default function Home() {
       </ul>
       
       {/* truyền data từ cha sang con */}
-      <AppTable blogs={data} ></AppTable>
+      <AppTable blogs={data?.sort((a: any, b: any) => b.id - a.id)} ></AppTable>
     </div>
   )
 }
