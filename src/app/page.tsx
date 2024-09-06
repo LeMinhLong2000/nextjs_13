@@ -1,6 +1,10 @@
-"use client";
 import Link from "next/link";
-
+// Metadata chỉ dùng cho trang ko có 'use client'
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Home page",
+  description: "Home page",
+};
 export default function Home() {
   return (
     <div>
