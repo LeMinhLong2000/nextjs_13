@@ -8,12 +8,12 @@ import { mutate } from "swr"
 
 
 interface IProps{
-    showModel: boolean;
-    setShowModel: (value: boolean) => void; //hàm không return giá trị nào hết
+    showModalCreate: boolean;
+    setShowModalCreate: (value: boolean) => void; //hàm không return giá trị nào hết
 }
 
 function CreateModal(props: IProps) {
-    const { showModel, setShowModel } = props;
+    const { showModalCreate, setShowModalCreate } = props;
     
     // tạo các biến 
     const [title, setTitle] = useState<string>("");
@@ -55,12 +55,12 @@ function CreateModal(props: IProps) {
         setTitle("");
         setAuthor("");
         setContent("");
-        setShowModel(false)
+        setShowModalCreate(false)
     }
   return (
     <>
       <Modal
-        show={showModel}
+        show={showModalCreate}
         onHide={() => handleClose()}
         backdrop="static"
         keyboard={false}
